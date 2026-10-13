@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration</title>
+
+    <style>
+        body {
+            background-color: #e6f0ff;
+            font-family: Arial;
+        }
+
+        form {
+            background-color: white;
+            width: 300px;
+            margin: 50px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: #0047ab;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0047ab;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003080;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>Course Registration</h2>
+
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <label>Select Course:</label>
+        <select name="course" required>
+            <option value="">Choose a course</option>
+            <option>Java</option>
+            <option>Python</option>
+            <option>Web Development</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+
+</body>
+</html>
